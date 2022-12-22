@@ -1,0 +1,94 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.button {
+    padding: 0.5em;
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+
+.button:hover {
+    border: 2px solid black;
+    background: linear-gradient(to top, #99ccff, blueviolet, #1ad1ff);
+    color: #ffffff;
+}
+
+.popup-back {
+    background:  rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.rulesPopUp{
+    height: auto;
+    width: 500px;
+    background: white;
+    color: black;
+    border: 2px solid black;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.rulesPopUp img{
+    width: 50%;
+    height: 50%;
+}
+
+
+.rulesPopUp:hover {
+    border-image: linear-gradient(to right, #99ccff, blueviolet, #1ad1ff) 5;
+
+}
+
+.close-button {
+    /* border-radius: 50%; */
+    padding: 0.5em;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    color: black;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: white;
+}
+  
+.close-button:hover {
+    border: 2px solid black;
+    background: linear-gradient(to top, #99ccff, blueviolet, #1ad1ff);
+    color: #ffffff;
+}
+  
+.close-button::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: black;
+    width: 2px;
+    left: 12px;
+    top: 5px;
+    bottom: 5px;
+    transform: rotate(45deg);
+}
+
+.close-button::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    background-color: black;
+    height: 2px;
+    top:12px;
+    left: 5px;
+    right: 5px;
+    transform: rotate(45deg);
+}
+  

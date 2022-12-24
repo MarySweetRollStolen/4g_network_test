@@ -42,6 +42,5 @@ document.addEventListener('DOMContentLoaded', () => {
     imgArray.forEach(img => {
     document.getElementById('component').appendChild(img);
     });
-    
-    
+
 })

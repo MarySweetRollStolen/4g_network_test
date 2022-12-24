@@ -100,7 +100,8 @@ footer {
     font-size: 1.5em;
 }
 
-footer a {
+footer a, footer p{
+    font-size: 14px;
     color: white;
     text-decoration: none;
 }
@@ -129,9 +130,10 @@ footer a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 5;
 }
 
 .rulesPopUp{

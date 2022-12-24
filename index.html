@@ -10,6 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,400;1,400&family=Quantico:wght@700&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
     <title>4G LTE</title>
     <script src="app.js"></script>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+   <script src="raphael.js"></script>
+    <script src="DragObject.js"></script>
+    <script src="DropTarget.js"></script>
+    <script src="dragMaster.js"></script>
+    <script src="helpers.js"></script>
 </head>
 <body>
 
@@ -25,17 +32,26 @@
         </div>
     </div>
 
+    <div class="popup-back">
+        <div class="rulesPopUp">
+            <p>Тест завершено.</p>
+            <p>Ви набрали: <span>3</span> балів із 7</p>
+            <p>Вітаю!</p>
+            <button class="close-button" id="buttonPopUpClose"></button>
+        </div>
+    </div>
+
     <div class="container">
         <div class="wrapper">
         <header>
             <img id="ssuLogo" src="images/ssu.png" alt="Сумський державний університет лого">     
-            <button id="buttonPopUpOpen" class="button">що я тут роблю?</button>     
+            <button id="buttonPopUpOpen" class="button">що я?</button>     
         </header>
         <div class="color"></div>
         <!-- <div class="dropable"></div> -->
         <div class="schema">
             
-                <svg height="549" version="1.1" width="768" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative;">
+                <svg height="390" version="1.1" width="768" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative;">
                     <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Rapha?l 2.1.2</desc>
                     <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
                     <rect x="21.224" y="82.34400000000001" width="56.12" height="56.12" rx="0" ry="0" fill="#ffffff" stroke="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" id="0" stroke-width="1.1224"></rect>
@@ -82,7 +98,6 @@
         </footer>
     </div>
     </div>
-
 
 </body>
 </html>
